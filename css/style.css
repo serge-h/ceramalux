@@ -145,6 +145,12 @@ body {
 .products__carousel .owl-nav button.owl-prev:hover {
   opacity: 0.5;
 }
+@media only screen and (max-width: 767px) {
+  .products__carousel .owl-nav {
+    top: unset;
+    bottom: -40px;
+  }
+}
 
 .products__item {
   transition: all 0.4s;
