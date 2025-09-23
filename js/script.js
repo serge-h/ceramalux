@@ -19,7 +19,7 @@ $(document).ready(function () {
         smartSpeed:800,
         responsive: {
             0: {
-                items: 1.15
+                items: 1.65
             },
             600: {
                 items: 3.5

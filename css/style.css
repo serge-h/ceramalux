@@ -181,4 +181,54 @@ body {
   transition: all 0.4s;
 }
 
+.fixed__phone__number {
+  position: fixed;
+  bottom: 10%;
+  right: 15px;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 35px;
+  color: #000000;
+  background: #ccc;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+.fixed__phone__number i {
+  transition: all 0.4s;
+}
+.fixed__phone__number:hover {
+  opacity: 0.8;
+}
+.fixed__phone__number:hover i {
+  transform: rotate(10deg);
+}
+
+@media only screen and (max-width: 767px) {
+  .categories__item {
+    height: 215px;
+  }
+  .categories__item h3 {
+    font-size: 16px;
+    padding: 15px;
+  }
+  .products__item .card-title {
+    font-size: 18px;
+  }
+  .products__item .products__img__wrapper {
+    height: 185px;
+  }
+  .products__item .product__info {
+    flex-direction: column-reverse;
+    align-items: flex-start !important;
+    margin-bottom: 0;
+  }
+  .products__item .product__info .h3 {
+    margin-top: 10px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
