@@ -197,6 +197,7 @@ body {
   text-decoration: none;
   transition: all 0.4s;
   z-index: 10;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 .fixed__phone__number i {
   transition: all 0.4s;
@@ -229,6 +230,11 @@ body {
   }
   .products__item .product__info .h3 {
     margin-top: 10px;
+  }
+  .fixed__phone__number {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
   }
 }
 
