@@ -237,6 +237,9 @@ body {
     font-size: 30px;
     bottom: 6%;
   }
+  .logo {
+    height: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
