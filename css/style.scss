@@ -99,22 +99,17 @@ body {
     img {
       transform: scale(1.1);
     }
-
-    h3 {
-      bottom: 0;
-    }
   }
 
   h3 {
     position: absolute;
     left: 0;
-    padding: 30px;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
     z-index: 1;
     color: #ffffff;
-    bottom: -100%;
-    transition: all 0.4s;
+    bottom: 0;
   }
 
   img {
@@ -249,7 +244,7 @@ body {
   }
   .products__item {
     .card-title {
-      font-size: 18px;
+      font-size: 16px;
     }
 
     .products__img__wrapper {
@@ -261,8 +256,12 @@ body {
       align-items: flex-start !important;
       margin-bottom: 0;
       .h3 {
-        margin-top: 10px;
+        font-size: 20px;
+        margin: 5px 0;
       }
+    }
+    .card-body{
+      padding-bottom: 2px;
     }
   }
   .fixed__phone__number{

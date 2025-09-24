@@ -92,19 +92,15 @@ body {
 .categories__item:hover img {
   transform: scale(1.1);
 }
-.categories__item:hover h3 {
-  bottom: 0;
-}
 .categories__item h3 {
   position: absolute;
   left: 0;
-  padding: 30px;
+  padding: 20px;
   background: rgba(0, 0, 0, 0.4);
   width: 100%;
   z-index: 1;
   color: #ffffff;
-  bottom: -100%;
-  transition: all 0.4s;
+  bottom: 0;
 }
 .categories__item img {
   width: 100%;
@@ -218,7 +214,7 @@ body {
     padding: 15px;
   }
   .products__item .card-title {
-    font-size: 18px;
+    font-size: 16px;
   }
   .products__item .products__img__wrapper {
     height: 185px;
@@ -229,7 +225,11 @@ body {
     margin-bottom: 0;
   }
   .products__item .product__info .h3 {
-    margin-top: 10px;
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  .products__item .card-body {
+    padding-bottom: 2px;
   }
   .fixed__phone__number {
     width: 60px;
