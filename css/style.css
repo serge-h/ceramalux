@@ -112,10 +112,41 @@ body {
   top: 0;
   left: 0;
 }
-@media not (hover: hover) {
-  .categories__item h3 {
-    bottom: 0;
-  }
+
+.categories__carousel {
+  padding: 30px 0 20px;
+}
+.categories__carousel .categories__item {
+  height: 150px;
+}
+.categories__carousel .categories__item h3 {
+  font-size: 14px;
+  padding: 6px;
+}
+
+.form-check-input,
+.form-check-label {
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.form-check-input:hover,
+.form-check-label:hover {
+  opacity: 0.8;
+}
+
+.form-check-input:checked {
+  background-color: #212529;
+  border-color: #212529;
+}
+
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 1px rgb(33, 37, 41);
+  border-color: rgb(33, 37, 41);
+}
+
+textarea.form-control {
+  min-height: 200px;
 }
 
 .products {
@@ -194,7 +225,7 @@ body {
   text-decoration: none;
   transition: all 0.4s;
   z-index: 10;
-  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
 }
 .fixed__phone__number i {
   transition: all 0.4s;
