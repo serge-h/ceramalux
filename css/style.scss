@@ -290,7 +290,8 @@ textarea.form-control {
     }
   }
 }
-.splide-main__wrapper{
+
+.splide-main__wrapper {
   width: 100%;
   overflow: hidden;
 }
@@ -355,13 +356,15 @@ textarea.form-control {
   overflow: hidden;
 }
 
-.splide__arrow{
+.splide__arrow {
   background: #ffffff;
   opacity: 1;
 }
-.product__desc{
+
+.product__desc {
   scroll-margin: 120px;
 }
+
 @media only screen and (max-width: 767px) {
   .categories__item {
     height: 215px;
@@ -404,5 +407,9 @@ textarea.form-control {
   .logo {
     height: 40px;
   }
+  .categories__carousel .categories__item h3 {
+    font-size: 13px;
+  }
+
 }
 

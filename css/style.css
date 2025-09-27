@@ -359,6 +359,9 @@ textarea.form-control {
   .logo {
     height: 40px;
   }
+  .categories__carousel .categories__item h3 {
+    font-size: 13px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

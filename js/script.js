@@ -31,7 +31,7 @@ $(document).ready(function () {
     })
     $('.categories__carousel').owlCarousel({
         loop: true,
-        margin: 20,
+        margin: 15,
         nav: false,
         dots: false,
         stagePadding: 15,
@@ -40,13 +40,19 @@ $(document).ready(function () {
         smartSpeed: 800,
         responsive: {
             0: {
-                items: 3
+                items: 2.7
             },
             600: {
-                items: 6
+                items: 4.7
             },
-            1000: {
-                items: 11
+            968: {
+                items: 6.7
+            },
+            1170: {
+                items: 8.7
+            },
+            1250: {
+                items: 10.7
             }
         }
     })
