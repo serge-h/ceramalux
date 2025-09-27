@@ -79,6 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
         pagination: false,
         arrows: true,
         lazyLoad: 'nearby',
+        gap: 10
     });
 
     // Слайдер для миниатюр — выступает как навигация
