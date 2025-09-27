@@ -155,6 +155,7 @@ body {
   background-color: #212529;
   border-color: #212529;
 }
+
 .form-select:focus,
 .form-control:focus,
 .form-check-input:focus {
@@ -273,20 +274,92 @@ textarea.form-control {
 
 .offcanvas-body {
   overflow-y: scroll;
-  .filter__title{
+
+  .filter__title {
     font-size: 22px;
     color: #000000;
-    i{
+
+    i {
       transition: all 0.4s;
     }
-    &[aria-expanded="true"]{
-      i{
+
+    &[aria-expanded="true"] {
+      i {
         transform: rotateX(180deg);
       }
     }
   }
 }
+.splide-main__wrapper{
+  width: 100%;
+  overflow: hidden;
+}
 
+.splide-main {
+  width: 100%;
+  background-color: transparent;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.splide-main img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  min-height: 300px;
+  max-height: 400px;
+}
+
+.splide-thumbs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.splide-thumbs .splide__slide {
+  width: calc(25% - 10px);
+  height: auto;
+  margin-right: 14px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+
+  &.is-active {
+    border: 0 !important;
+  }
+}
+
+.splide-thumbs .splide__slide img {
+  width: 100%;
+  border-radius: 5px;
+
+  filter: grayscale(1);
+  opacity: 0.65;
+  transition: 0.5s ease;
+}
+
+
+.splide-thumbs .splide__slide.is-active img {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.splide-thumbs .splide__slide {
+  height: 80px;
+  overflow: hidden;
+}
+
+.splide__arrow{
+  background: #ffffff;
+  opacity: 1;
+}
 @media only screen and (max-width: 767px) {
   .categories__item {
     height: 215px;
@@ -328,6 +401,9 @@ textarea.form-control {
   }
   .logo {
     height: 40px;
+  }
+  .splide__list{
+    max-height: 320px;
   }
 }
 

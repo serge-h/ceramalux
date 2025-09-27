@@ -4,9 +4,9 @@ $(document).ready(function () {
         loop: true,
         margin: 0,
         nav: false,
-        autoplay:true,
-        autoplayTimeout:6000,
-        smartSpeed:800,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        smartSpeed: 800,
         items: 1
     })
     $('.products__carousel').owlCarousel({
@@ -14,9 +14,9 @@ $(document).ready(function () {
         margin: 20,
         nav: true,
         stagePadding: 2,
-        autoplay:true,
-        autoplayTimeout:6000,
-        smartSpeed:800,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        smartSpeed: 800,
         responsive: {
             0: {
                 items: 1.65
@@ -33,11 +33,11 @@ $(document).ready(function () {
         loop: true,
         margin: 20,
         nav: false,
-        dots:false,
+        dots: false,
         stagePadding: 15,
-        autoplay:true,
-        autoplayTimeout:6000,
-        smartSpeed:800,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        smartSpeed: 800,
         responsive: {
             0: {
                 items: 3
@@ -71,3 +71,38 @@ $(document).ready(function () {
         }, false)
     })
 })()
+document.addEventListener('DOMContentLoaded', function () {
+    // Главный слайдер
+    var main = new Splide('#image-slider', {
+        type: 'slide',
+        rewind: true,
+        pagination: false,
+        arrows: true,
+        lazyLoad: 'nearby',
+    });
+
+    // Слайдер для миниатюр — выступает как навигация
+    var thumbs = new Splide('#thumbs-slider', {
+        fixedWidth: 140,
+        fixedHeight: 80,
+        gap: 10,
+        rewind: true,
+        pagination: false,
+        isNavigation: true,
+        focus: 'center',
+        arrows: false,
+        breakpoints: {
+            640: {
+                fixedWidth: 100,
+                fixedHeight: 70,
+            }
+        }
+    });
+
+
+    main.sync(thumbs);
+
+
+    thumbs.mount();
+    main.mount();
+});
