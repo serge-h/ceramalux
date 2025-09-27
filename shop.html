@@ -126,10 +126,11 @@
 
 <div class="container">
     <div class="row justify-content-between align-items-center  mb-5">
-        <div class="col-xl-7 col-lg-6 col-md-5">  <h2>Магазин</h2></div>
+        <div class="col-xl-7 col-lg-6 col-md-5"><h2>Магазин</h2></div>
 
         <div class="col d-flex justify-content-end w-100">
-            <select name="orderby" class="orderby text-dark form-select me-md-3 me-2 px-2" aria-label="Заказ в магазине">
+            <select name="orderby" class="orderby text-dark form-select me-md-3 me-2 px-2"
+                    aria-label="Заказ в магазине">
                 <option value="menu_order" selected="selected">Исходная сортировка</option>
                 <option value="popularity">По популярности</option>
                 <option value="rating">По рейтингу</option>
@@ -137,7 +138,8 @@
                 <option value="price">По возрастанию цены</option>
                 <option value="price-desc">По убыванию цены</option>
             </select>
-            <button class="btn btn-dark btn-md flex-shrink-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+            <button class="btn btn-dark btn-md flex-shrink-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample"
                     aria-controls="offcanvasExample">
                 <i class="fa-solid fa-filter"></i> Фильтр
             </button>
@@ -150,7 +152,7 @@
         </div>
         <div class="offcanvas-body">
             <div>
-                <a class="filter__title h5 text-decoration-none d-flex justify-content-between"
+                <a class="filter__title h5 text-decoration-none d-flex justify-content-between border-bottom pb-2"
                    data-bs-toggle="collapse" href="#collapseFilter1" role="button"
                    aria-expanded="true" aria-controls="collapseFilter1">
                     Категории <i class="fa-solid fa-chevron-down"></i>
@@ -279,7 +281,38 @@
                 </div>
             </div>
             <div class="py-3">
-                <a class="filter__title h5 text-decoration-none d-flex justify-content-between"
+                <a class="filter__title h5 text-decoration-none d-flex justify-content-between border-bottom pb-2"
+                   data-bs-toggle="collapse" href="#collapseFilter4" role="button"
+                   aria-expanded="true" aria-controls="collapseFilter4">
+                    Цена <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="collapse show" id="collapseFilter4">
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+
+                            <div class="input-group">
+                                <span class="input-group-text">₽</span>
+                                <input class="form-control" type="number" id="minInput" value="1000" min="0"
+                                       max="95000">
+                            </div>
+                            <span class="mx-2">-</span>
+                            <div class="input-group">
+                                <span class="input-group-text">₽</span>
+                                <input class="form-control" type="number" placeholder="₽" id="maxInput" value="9000"
+                                       min="0" max="95000">
+                            </div>
+                        </div>
+
+                        <div class="slider">
+                            <div class="progress"></div>
+                            <input type="range" id="minRange" min="0" max="95000" value="1000">
+                            <input type="range" id="maxRange" min="0" max="95000" value="9000">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="py-3">
+                <a class="filter__title h5 text-decoration-none d-flex justify-content-between border-bottom pb-2"
                    data-bs-toggle="collapse" href="#collapseFilter2" role="button"
                    aria-expanded="true" aria-controls="collapseFilter2">
                     Размеры <i class="fa-solid fa-chevron-down"></i>
@@ -313,7 +346,7 @@
                 </div>
             </div>
             <div>
-                <a class="filter__title h5 text-decoration-none d-flex justify-content-between"
+                <a class="filter__title h5 text-decoration-none d-flex justify-content-between border-bottom pb-2"
                    data-bs-toggle="collapse" href="#collapseFilter3" role="button"
                    aria-expanded="true" aria-controls="collapseFilter3">
                     Цвета <i class="fa-solid fa-chevron-down"></i>

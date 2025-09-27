@@ -57,6 +57,75 @@ $(document).ready(function () {
         }
     })
 
+
+    // Range slider start
+
+    // 🎯 Настройки — всё управляется отсюда
+    const MIN_GAP = 500; // минимальная разница между min и max
+
+    const minInput = document.getElementById("minInput");
+    const maxInput = document.getElementById("maxInput");
+    const minRange = document.getElementById("minRange");
+    const maxRange = document.getElementById("maxRange");
+    const progress = document.querySelector(".progress");
+
+    // Функция обновления прогресс-бара и инпутов
+    function updateProgress(e) {
+        let minVal = parseInt(minRange.value);
+        let maxVal = parseInt(maxRange.value);
+
+        // Корректируем, если разница меньше MIN_GAP
+        if (maxVal - minVal < MIN_GAP) {
+            if (e?.target?.id === "minRange") {
+                minVal = maxVal - MIN_GAP;
+                minRange.value = minVal;
+            } else {
+                maxVal = minVal + MIN_GAP;
+                maxRange.value = maxVal;
+            }
+        }
+
+        // Обновляем инпуты
+        minInput.value = minVal;
+        maxInput.value = maxVal;
+
+        // Обновляем прогресс-бар
+        const maxLimit = parseInt(maxRange.max);
+        progress.style.left = (minVal / maxLimit) * 100 + "%";
+        progress.style.right = 100 - (maxVal / maxLimit) * 100 + "%";
+    }
+
+    // 🎛 События для range-ползунков
+    minRange.addEventListener("input", updateProgress);
+    maxRange.addEventListener("input", updateProgress);
+
+    // 🎛 События для input-полей
+    minInput.addEventListener("change", () => {
+        let value = parseInt(minInput.value) || 0;
+        const maxVal = parseInt(maxRange.value);
+
+        if (value < 0) value = 0;
+        if (value > maxVal - MIN_GAP) value = maxVal - MIN_GAP;
+
+        minRange.value = value;
+        updateProgress();
+    });
+
+    maxInput.addEventListener("change", () => {
+        let value = parseInt(maxInput.value) || 0;
+        const maxLimit = parseInt(maxRange.max);
+        const minVal = parseInt(minRange.value);
+
+        if (value > maxLimit) value = maxLimit;
+        if (value < minVal + MIN_GAP) value = minVal + MIN_GAP;
+
+        maxRange.value = value;
+        updateProgress();
+    });
+
+    // Стартовое обновление
+    updateProgress();
+    // Range slider End
 });
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {

@@ -365,6 +365,38 @@ textarea.form-control {
   scroll-margin: 120px;
 }
 
+.slider {
+  position: relative;
+  height: 6px;
+  background: #ddd;
+  border-radius: 3px;
+}
+
+.slider input[type=range] {
+  position: absolute;
+  width: 100%;
+  top: -6px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+}
+
+.slider input[type=range]::-webkit-slider-thumb {
+  pointer-events: all;
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: #212529;
+  cursor: pointer;
+}
+
+.progress {
+  position: absolute;
+  height: 6px;
+  background: #212529;
+  border-radius: 3px;
+}
 @media only screen and (max-width: 767px) {
   .categories__item {
     height: 215px;
