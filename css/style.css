@@ -127,6 +127,7 @@ body {
 .form-check-input,
 .form-check-label {
   cursor: pointer;
+  margin-left: 10px;
   transition: all 0.4s;
 }
 .form-check-input:hover,
@@ -192,6 +193,7 @@ textarea.form-control {
 .products__item .products__img__wrapper {
   height: 280px;
   overflow: hidden;
+  border-radius: var(--bs-border-radius) var(--bs-border-radius) 0 0;
 }
 .products__item .card-img-top {
   object-fit: cover;
@@ -235,6 +237,20 @@ textarea.form-control {
 }
 .fixed__phone__number:hover i {
   transform: rotate(10deg);
+}
+
+.offcanvas-body {
+  overflow-y: scroll;
+}
+.offcanvas-body .filter__title {
+  font-size: 22px;
+  color: #000000;
+}
+.offcanvas-body .filter__title i {
+  transition: all 0.4s;
+}
+.offcanvas-body .filter__title[aria-expanded=true] i {
+  transform: rotateX(180deg);
 }
 
 @media only screen and (max-width: 767px) {

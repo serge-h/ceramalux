@@ -143,6 +143,7 @@ body {
 .form-check-input,
 .form-check-label {
   cursor: pointer;
+  margin-left: 10px;
   transition: all 0.4s;
 
   &:hover {
@@ -154,12 +155,14 @@ body {
   background-color: #212529;
   border-color: #212529;
 }
+
 .form-control:focus,
 .form-check-input:focus {
   box-shadow: 0 0 0 1px rgb(33, 37, 41);
   border-color: rgb(33, 37, 41);
 }
-textarea.form-control{
+
+textarea.form-control {
   min-height: 200px;
 }
 
@@ -211,6 +214,7 @@ textarea.form-control{
   .products__img__wrapper {
     height: 280px;
     overflow: hidden;
+    border-radius: var(--bs-border-radius) var(--bs-border-radius) 0 0;
   }
 
   .card-img-top {
@@ -263,6 +267,22 @@ textarea.form-control{
 
     i {
       transform: rotate(10deg);
+    }
+  }
+}
+
+.offcanvas-body {
+  overflow-y: scroll;
+  .filter__title{
+    font-size: 22px;
+    color: #000000;
+    i{
+      transition: all 0.4s;
+    }
+    &[aria-expanded="true"]{
+      i{
+        transform: rotateX(180deg);
+      }
     }
   }
 }

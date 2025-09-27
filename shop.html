@@ -31,7 +31,7 @@
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                    aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse order-lg-0 " id="navbarSupportedContent">
@@ -148,111 +148,223 @@
         </div>
         <div class="offcanvas-body">
             <div>
-                <h5 class="border-bottom py-2">Категории</h5>
-                <div class="form-check border-bottom py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="checkCategory1">
-                    <label class="form-check-label" for="checkCategory1">
-                        Раковины
-                    </label>
+                <a class="filter__title h5 text-decoration-none d-flex justify-content-between"
+                   data-bs-toggle="collapse" href="#collapseFilter1" role="button"
+                   aria-expanded="true" aria-controls="collapseFilter1">
+                    Категории <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="collapse show" id="collapseFilter1">
+                    <div class="form-check border-bottom py-2">
+                        <div class="d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="checkCategory1">
+                            <label class="form-check-label" for="checkCategory1">
+                                Раковины</label>
+                        </div>
+
+                    </div>
+                    <div class="form-check border-bottom py-2">
+                        <div class="d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="checkCategory2">
+                            <label class="form-check-label" for="checkCategory2">
+                                Унитазы
+                            </label>
+                            <a class="text-decoration-none text-dark ms-auto"
+                               data-bs-toggle="collapse" href="#collapseFiltersub1" role="button"
+                               aria-expanded="true" aria-controls="collapseFiltersub1">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                        </div>
+
+                        <div class="border-top ms-3 mt-2 collapse" id="collapseFiltersub1">
+                            <div class="">
+                                <input class="form-check-input" type="checkbox" value="" id="checkCategorysub1">
+                                <label class="form-check-label" for="checkCategorysub1">
+                                    Инсталляция
+                                </label>
+                            </div>
+                            <div class="">
+                                <input class="form-check-input" type="checkbox" value="" id="checkCategorysub2">
+                                <label class="form-check-label" for="checkCategorysub2">
+                                    Напольные унитазы
+                                </label>
+                            </div>
+                            <div class="">
+                                <input class="form-check-input" type="checkbox" value="" id="checkCategorysub3">
+                                <label class="form-check-label" for="checkCategorysub3">
+                                    Подвесные унитазы
+                                </label>
+                            </div>
+                            <div class="">
+                                <input class="form-check-input" type="checkbox" value="" id="checkCategorysub4">
+                                <label class="form-check-label" for="checkCategorysub4">
+                                    Приставные унитазы
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-check border-bottom py-2">
+                        <div class="d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="checkCategory3">
+                            <label class="form-check-label" for="checkCategory3">
+                                Биде
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check border-bottom py-2">
+                        <div class="d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="checkCategory4">
+                            <label class="form-check-label" for="checkCategory4">
+                                Писсуары
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check border-bottom py-2">
+                        <div class="d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="checkCategory5">
+                            <label class="form-check-label" for="checkCategory5">
+                                Душевые перегородки
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check border-bottom py-2">
+                        <div class="d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="checkCategory6">
+                            <label class="form-check-label" for="checkCategory6">
+                                Трапы
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check border-bottom py-2">
+                        <div class="d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="checkCategory7">
+                            <label class="form-check-label" for="checkCategory7">
+                                Аксессуары для ванной комнаты
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check border-bottom py-2">
+                        <div class="d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="checkCategory8">
+                            <label class="form-check-label" for="checkCategory8">
+                                Гигиенический душ со смесителем
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check border-bottom py-2">
+                        <div class="d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="checkCategory9">
+                            <label class="form-check-label" for="checkCategory9">
+                                Аксессуары
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check border-bottom py-2">
+                        <div class="d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="checkCategory10">
+                            <label class="form-check-label" for="checkCategory10">
+                                Донные клапана
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check border-bottom py-2">
+                        <div class="d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="checkCategory11">
+                            <label class="form-check-label" for="checkCategory11">
+                                Сифоны
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-check border-bottom py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="checkCategory2">
-                    <label class="form-check-label" for="checkCategory2">
-                        Унитазы
-                    </label>
-                </div>
-                <div class="form-check border-bottom py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="checkCategory3">
-                    <label class="form-check-label" for="checkCategory3">
-                        Биде
-                    </label>
-                </div>
-                <div class="form-check border-bottom py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="checkCategory4">
-                    <label class="form-check-label" for="checkCategory4">
-                        Писсуары
-                    </label>
-                </div>
-                <div class="form-check border-bottom py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="checkCategory5">
-                    <label class="form-check-label" for="checkCategory5">
-                        Душевые перегородки
-                    </label>
-                </div>
-                <div class="form-check border-bottom py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="checkCategory6">
-                    <label class="form-check-label" for="checkCategory6">
-                        Трапы
-                    </label>
-                </div>
-                <div class="form-check border-bottom py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="checkCategory7">
-                    <label class="form-check-label" for="checkCategory7">
-                        Аксессуары для ванной комнаты
-                    </label>
-                </div>
-                <div class="form-check border-bottom py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="checkCategory8">
-                    <label class="form-check-label" for="checkCategory8">
-                        Гигиенический душ со смесителем
-                    </label>
-                </div>
-                <div class="form-check border-bottom py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="checkCategory9">
-                    <label class="form-check-label" for="checkCategory9">
-                        Аксессуары
-                    </label>
-                </div>
-                <div class="form-check border-bottom py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="checkCategory10">
-                    <label class="form-check-label" for="checkCategory10">
-                        Донные клапана
-                    </label>
-                </div>
-                <div class="form-check border-bottom py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="checkCategory11">
-                    <label class="form-check-label" for="checkCategory11">
-                        Сифоны
-                    </label>
+            </div>
+            <div class="py-3">
+                <a class="filter__title h5 text-decoration-none d-flex justify-content-between"
+                   data-bs-toggle="collapse" href="#collapseFilter2" role="button"
+                   aria-expanded="true" aria-controls="collapseFilter2">
+                    Размеры <i class="fa-solid fa-chevron-down"></i>
+                </a>
+
+                <div class="collapse show" id="collapseFilter2">
+                    <div>
+                        <label class="form-label">Высота</label>
+                        <div class="d-flex align-items-center">
+                            <input type="text" class="form-control" placeholder="см">
+                            <span class="mx-2">-</span>
+                            <input type="text" class="form-control" placeholder="см">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="form-label">Ширина</label>
+                        <div class="d-flex align-items-center">
+                            <input type="text" class="form-control" placeholder="см">
+                            <span class="mx-2">-</span>
+                            <input type="text" class="form-control" placeholder="см">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="form-label">Глубина</label>
+                        <div class="d-flex align-items-center">
+                            <input type="text" class="form-control" placeholder="см">
+                            <span class="mx-2">-</span>
+                            <input type="text" class="form-control" placeholder="см">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div>
-                <h5 class="border-bottom py-2">Цвета</h5>
-                <div class="form-check border-bottom py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="color1">
-                    <label class="form-check-label" for="color1">
-                        Чёрный
-                    </label>
-                </div>
-                <div class="form-check border-bottom py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="color2">
-                    <label class="form-check-label" for="color2">
-                        Белый
-                    </label>
-                </div>
-                <div class="form-check border-bottom py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="color3">
-                    <label class="form-check-label" for="color3">
-                        Розовый
-                    </label>
-                </div>
-                <div class="form-check border-bottom py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="color4">
-                    <label class="form-check-label" for="color4">
-                        Бордовый
-                    </label>
-                </div>
-                <div class="form-check border-bottom py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="color5">
-                    <label class="form-check-label" for="color5">
-                        Красный
-                    </label>
-                </div>
-                <div class="form-check border-bottom py-2">
-                    <input class="form-check-input" type="checkbox" value="" id="color6">
-                    <label class="form-check-label" for="color6">
-                        Тёмно-зелёный
-                    </label>
+                <a class="filter__title h5 text-decoration-none d-flex justify-content-between"
+                   data-bs-toggle="collapse" href="#collapseFilter3" role="button"
+                   aria-expanded="true" aria-controls="collapseFilter3">
+                    Цвета <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="collapse show" id="collapseFilter3">
+                    <div class="form-check border-bottom py-2">
+                        <div class="d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="color1">
+                            <label class="form-check-label" for="color1">
+                                Чёрный
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check border-bottom py-2">
+                        <div class="d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="color2">
+                            <label class="form-check-label" for="color2">
+                                Белый
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check border-bottom py-2">
+                        <div class="d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="color3">
+                            <label class="form-check-label" for="color3">
+                                Розовый
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check border-bottom py-2">
+                        <div class="d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="color4">
+                            <label class="form-check-label" for="color4">
+                                Бордовый
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check border-bottom py-2">
+                        <div class="d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="color5">
+                            <label class="form-check-label" for="color5">
+                                Красный
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check border-bottom py-2">
+                        <div class="d-flex">
+                            <input class="form-check-input" type="checkbox" value="" id="color6">
+                            <label class="form-check-label" for="color6">
+                                Тёмно-зелёный
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -718,7 +830,7 @@
             </div>
             <div class="col-md-4">
                 <h5 class="mb-4">Информация</h5>
-                   <ul class="list-unstyled">
+                <ul class="list-unstyled">
                     <li><a class="link-dark link-offset-2 link-opacity-50-hover d-flex text-decoration-none px-2"
                            href="index.html">Главный</a></li>
                     <li><a class="link-dark link-offset-2 link-opacity-50-hover d-flex text-decoration-none px-2"
