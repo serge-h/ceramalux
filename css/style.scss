@@ -359,6 +359,9 @@ textarea.form-control {
   background: #ffffff;
   opacity: 1;
 }
+.product__desc{
+  scroll-margin: 120px;
+}
 @media only screen and (max-width: 767px) {
   .categories__item {
     height: 215px;
