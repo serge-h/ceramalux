@@ -125,6 +125,22 @@ $(document).ready(function () {
 
     // Стартовое обновление
     updateProgress();
+
+
+    function allowOnlyNumbers(input) {
+        input.addEventListener("input", () => {
+            // удаляем всё кроме цифр
+            input.value = input.value.replace(/\D/g, "");
+        });
+
+        input.addEventListener("blur", () => {
+            // если пустое поле — ставим 0
+            if (input.value === "") input.value = 0;
+        });
+    }
+
+    allowOnlyNumbers(minInput);
+    allowOnlyNumbers(maxInput);
     // Range slider End
 });
 // Example starter JavaScript for disabling form submissions if there are invalid fields
