@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const MIN_GAP = 500;
+    const MIN_GAP = 0;
 
     const minInput = document.getElementById("minInput");
     const maxInput = document.getElementById("maxInput");
