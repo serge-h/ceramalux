@@ -139,6 +139,7 @@ $(document).ready(() => {
         autoplay: true,
         autoplayTimeout: 4000,
         smartSpeed: 800,
+        navText: ['<i class="fa-solid fa-chevron-left"></i>','<i class="fa-solid fa-chevron-right"></i>'],
         responsive: {
             0: {items: 2.7},
             600: {items: 4.7},
