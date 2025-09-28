@@ -148,3 +148,6 @@ $(document).ready(() => {
         }
     });
 });
+Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+});
