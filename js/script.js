@@ -110,7 +110,7 @@ $(document).ready(() => {
         margin: 0,
         nav: false,
         autoplay: true,
-        autoplayTimeout: 6000,
+        autoplayTimeout: 4000,
         smartSpeed: 800,
         items: 1
     });
@@ -121,7 +121,7 @@ $(document).ready(() => {
         nav: true,
         stagePadding: 2,
         autoplay: true,
-        autoplayTimeout: 6000,
+        autoplayTimeout: 4000,
         smartSpeed: 800,
         responsive: {
             0: {items: 1.65},
@@ -133,11 +133,11 @@ $(document).ready(() => {
     $('.categories__carousel').owlCarousel({
         loop: true,
         margin: 15,
-        nav: false,
+        nav: true,
         dots: false,
         stagePadding: 15,
         autoplay: true,
-        autoplayTimeout: 6000,
+        autoplayTimeout: 4000,
         smartSpeed: 800,
         responsive: {
             0: {items: 2.7},

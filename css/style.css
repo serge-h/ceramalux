@@ -357,6 +357,31 @@ textarea.form-control {
   border-radius: 3px;
 }
 
+.categories__carousel.owl-carousel .owl-nav button.owl-next, .categories__carousel.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  top: 45%;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #ffffff;
+  color: #000000;
+  font-size: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+  line-height: 1;
+}
+.categories__carousel.owl-carousel .owl-nav button.owl-next:hover, .categories__carousel.owl-carousel .owl-nav button.owl-prev:hover {
+  opacity: 0.7;
+}
+.categories__carousel.owl-carousel .owl-nav button.owl-prev {
+  left: 8px;
+}
+.categories__carousel.owl-carousel .owl-nav button.owl-next {
+  right: 8px;
+}
+
 @media only screen and (max-width: 767px) {
   .categories__item {
     height: 215px;
